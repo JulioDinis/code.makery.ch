@@ -1,0 +1,407 @@
+﻿<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>آموزش JavaFX 8 (فارسی) | code.makery.ch</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--
+    /**
+     * @license
+     * MyFonts Webfont Build ID 2872352, 2014-08-27T06:57:40-0400
+     * 
+     * The fonts listed in this notice are subject to the End User License
+     * Agreement(s) entered into by the website owner. All other parties are 
+     * explicitly restricted from using the Licensed Webfonts(s).
+     * 
+     * You may obtain a valid license at the URLs below.
+     * 
+     * Webfont: Museo Slab 700 by exljbris
+     * URL: http://www.myfonts.com/fonts/exljbris/museo-slab/700/
+     * Copyright: Copyright (c) 2009 by Jos Buivenga. All rights reserved.
+     * Licensed pageviews: 500,000
+     * 
+     * License: http://www.myfonts.com/viewlicense?type=web&buildid=2872352
+     * 
+     * © 2014 MyFonts Inc
+    */
+    -->
+    <link href="/theme/css/style.min.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="canonical" href="http://code.makery.ch/library/javafx-8-tutorial/fa/" />
+  
+    <!-- Alternate Languages -->
+    <link rel="alternate" hreflang="en" href="http://code.makery.ch/library/javafx-8-tutorial/" />
+    <link rel="alternate" hreflang="es" href="http://code.makery.ch/library/javafx-8-tutorial/es/" />
+    <link rel="alternate" hreflang="fa" href="http://code.makery.ch/library/javafx-8-tutorial/fa/" />
+    <link rel="alternate" hreflang="fr" href="http://code.makery.ch/library/javafx-8-tutorial/fr/" />
+    <link rel="alternate" hreflang="id" href="http://code.makery.ch/library/javafx-8-tutorial/id/" />
+    <link rel="alternate" hreflang="it" href="http://code.makery.ch/library/javafx-8-tutorial/it/" />
+    <link rel="alternate" hreflang="pt" href="http://code.makery.ch/library/javafx-8-tutorial/pt/" />
+    <link rel="alternate" hreflang="ru" href="http://code.makery.ch/library/javafx-8-tutorial/ru/" />
+    <link rel="alternate" hreflang="tr" href="http://code.makery.ch/library/javafx-8-tutorial/tr/" />
+    <link rel="alternate" hreflang="uk" href="http://code.makery.ch/library/javafx-8-tutorial/uk/" />
+    <link rel="alternate" hreflang="zh-cn" href="http://code.makery.ch/library/javafx-8-tutorial/zh-cn/" />
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" href="/rss" title="code.makery.ch - RSS Feed">
+
+    <meta name="description" content="یک آموزش 7 قسمتی شامل طراحی, برنامه نویسی و پیاده‌سازی نسخه قابل نصب یک برنامه آدرس به وسیله JavaFX">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" value="summary">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="آموزش JavaFX 8 (فارسی) | code.makery.ch" />
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="یک آموزش 7 قسمتی شامل طراحی, برنامه نویسی و پیاده‌سازی نسخه قابل نصب یک برنامه آدرس به وسیله JavaFX" />
+    <meta property="og:url" content="http://code.makery.ch/library/javafx-8-tutorial/fa/" />
+    <meta property="og:image" content="http://code.makery.ch/assets/library/javafx-8-tutorial/addressapp.png" />
+    
+    <link rel="author" href="https://plus.google.com/+MarcoJakob7"/>
+    
+    <link href="/theme/css/prettify.min.css" rel="stylesheet" type="text/css" media="all" />
+
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-34917397-3', 'makery.ch');
+  ga('send', 'pageview');
+</script>
+  </head>
+  <body onload="prettyPrint()">
+    <header class="site-header container">
+  <h1 class="site-title">
+    <a href="/"><span class="main-text">code</span>.makery</a>
+  </h1>
+  <div class="site-intro">
+    <p>Learning how to code.</p>
+  </div>
+  
+  <div class="ribbon">
+    <a href="https://tinyletter.com/codemakery" title="Get Updates">Subscribe to <i class="fa fa-envelope-o"></i> Updates </a>
+  </div>
+</header>
+    
+    <div class="container article-container">
+      
+<nav class="site-navigation">
+  <ul>
+    <li><a class="black-link" href="/">Home</a></li>
+    <li><a class="main-link" href="/library/">Library</a></li>
+    <li><a class="black-link" href="/paths/">Paths</a></li>
+    <li><a class="black-link" href="/blog/">Blog</a></li>
+    <li><a class="black-link" href="/about/">About</a></li>
+  </ul>
+</nav>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <div class="github-edit">
+            <a href="https://github.com/marcojakob/code.makery.ch/edit/master/collections/library/javafx-8-tutorial-fa.md">Edit on GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+      <article class="row" dir="rtl">
+        <aside class="col-md-3">
+          <div class="visible-md-block visible-lg-block">
+          <div class="panel panel-default sidebar">
+  <div class="panel-heading">
+    <h4 class="panel-title">مباحث این سری</h4>  
+  </div>
+
+  <div class="list-group">
+      <a href="/library/javafx-8-tutorial/fa/" class="list-group-item active">
+        مقدمه</a>
+      <a href="/library/javafx-8-tutorial/fa/part1/" class="list-group-item">
+        قسمت اول: Scene Builder</a>
+      <a href="/library/javafx-8-tutorial/fa/part2/" class="list-group-item">
+        قسمت دوم: مدل و TableView</a>
+      <a href="/library/javafx-8-tutorial/fa/part3/" class="list-group-item">
+        قسمت سوم: تعامل با کاربر</a>
+      <a href="/library/javafx-8-tutorial/fa/part4/" class="list-group-item">
+        قسمت چهارم: سلیقه سازی با CSS</a>
+      <a href="/library/javafx-8-tutorial/fa/part5/" class="list-group-item">
+        قسمت پنجم: ذخیره کردن داده به عنوان XML</a>
+      <a href="/library/javafx-8-tutorial/fa/part6/" class="list-group-item">
+        قسمت ششم: رسم نمودار آماری</a>
+      <a href="/library/javafx-8-tutorial/fa/part7/" class="list-group-item">
+        قسمت هفتم: ساختن نسخه قابل نصب</a>
+  </div>
+</div>
+
+          <div class="panel panel-default sidebar">
+  <div class="panel-heading">
+    <h4 class="panel-title">زبان‌ها</h4>  
+  </div>
+  <div class="list-group">
+      <a href="/library/javafx-8-tutorial/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> English
+      </a>
+      <a href="/library/javafx-8-tutorial/es/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Español
+      </a>
+      <a href="/library/javafx-8-tutorial/fa/" class="list-group-item active">
+        <i class="fa fa-fw fa-globe"></i> فارسی
+      </a>
+      <a href="/library/javafx-8-tutorial/fr/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Français
+      </a>
+      <a href="/library/javafx-8-tutorial/id/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Bahasa Indonesia
+      </a>
+      <a href="/library/javafx-8-tutorial/it/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Italiano
+      </a>
+      <a href="/library/javafx-8-tutorial/pt/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Português
+      </a>
+      <a href="/library/javafx-8-tutorial/ru/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Русский
+      </a>
+      <a href="/library/javafx-8-tutorial/tr/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Türkçe
+      </a>
+      <a href="/library/javafx-8-tutorial/uk/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> Українська
+      </a>
+      <a href="/library/javafx-8-tutorial/zh-cn/" class="list-group-item">
+        <i class="fa fa-fw fa-globe"></i> 中文（简体）
+      </a>
+  </div>
+</div>
+
+          </div>
+        </aside>
+        <div class="col-md-9">
+          <header class="article-header">
+            <h1 class="article-title">آموزش JavaFX 8 (فارسی)</h1>
+            <div class="article-date">
+  Apr 19, 2014
+  • Updated Jul 15, 2015
+
+</div>
+          </header>
+          
+          <aside class="visible-xs-block visible-sm-block">
+            <div class="btn-group sidebar-dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">مباحث این سری <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+      <li class=" active"><a href="/library/javafx-8-tutorial/fa/">
+        مقدمه</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part1/">
+        قسمت اول: Scene Builder</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part2/">
+        قسمت دوم: مدل و TableView</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part3/">
+        قسمت سوم: تعامل با کاربر</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part4/">
+        قسمت چهارم: سلیقه سازی با CSS</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part5/">
+        قسمت پنجم: ذخیره کردن داده به عنوان XML</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part6/">
+        قسمت ششم: رسم نمودار آماری</a></li>
+      <li class=""><a href="/library/javafx-8-tutorial/fa/part7/">
+        قسمت هفتم: ساختن نسخه قابل نصب</a></li>
+  </ul>
+</div>
+
+            <div class="btn-group sidebar-dropdown">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">زبان‌ها <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+      <li class="">
+        <a href="/library/javafx-8-tutorial/"><i class="fa fa-fw fa-globe"></i> English</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/es/"><i class="fa fa-fw fa-globe"></i> Español</a>
+    </li>
+      <li class=" active">
+        <a href="/library/javafx-8-tutorial/fa/"><i class="fa fa-fw fa-globe"></i> فارسی</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/fr/"><i class="fa fa-fw fa-globe"></i> Français</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/id/"><i class="fa fa-fw fa-globe"></i> Bahasa Indonesia</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/it/"><i class="fa fa-fw fa-globe"></i> Italiano</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/pt/"><i class="fa fa-fw fa-globe"></i> Português</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/ru/"><i class="fa fa-fw fa-globe"></i> Русский</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/tr/"><i class="fa fa-fw fa-globe"></i> Türkçe</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/uk/"><i class="fa fa-fw fa-globe"></i> Українська</a>
+    </li>
+      <li class="">
+        <a href="/library/javafx-8-tutorial/zh-cn/"><i class="fa fa-fw fa-globe"></i> 中文（简体）</a>
+    </li>
+  </ul>
+</div>
+
+          </aside>
+          
+          <div class="article-content">
+            <p>در سال 2012 من یک <a href="/library/javafx-2-tutorial">آموزش کامل JavaFX 2</a> برای دانشجویانم نوشتم. بسیاری از مردم از سراسر دنیا آموزش رو خونده بودن و بازخورد مثبتی داشتند. بخاطر همین تصمیم گرفتم <strong>آموزش JavaFX 2 رو برای JavaFX 8 بازنویسی کنم</strong>(اطلاعات بیشتر درمورد <a href="/blog/update-to-javafx-8-whats-new/">تغییرات JavaFX8</a>)</p>
+<p>این آموزش شامل طراحی, برنامه نویسی, و پیاده‌سازی نسخه قابل نصب یک برنامه آدرس است. برنامه نهایی به شکل زیر خواهد بود:</p>
+<p><img src="/assets/library/javafx-8-tutorial/addressapp.png" alt="Screenshot AddressApp"></p>
+<h2 id="-">مباحثی که شما یاد میگیرید</h2>
+<ul>
+<li>ساختن یک پروژه JavaFX</li>
+<li>استفاده از Scene Builder برای طراحی رابط کاربری</li>
+<li>ساختار دادن به برنامه با استفاده از الگوی MVC</li>
+<li>استفاده از <code>ObservableLists</code> برای بروزرسانی خودکار رابط کاربری</li>
+<li>استفاده از <code>TableView</code> و واکنش نشان دادن به تغییر انتخاب در جدول</li>
+<li>ساختن بالابر (popup) برای تغییر در افراد</li>
+<li>اعتبار بخشیدن به داده‌ای که کاربر وارد میکند</li>
+<li>سلیقه سازی کردن یک برنامه JavaFX با استفاده از CSS</li>
+<li>کار با داده به عنوان XML</li>
+<li>ذخیره سازی آخرین شاخه باز شده توسط کاربر </li>
+<li>ساختن جدول JavaFX برای رسم اطلاعات آماری</li>
+<li>ساخت نسخه قابل نصب مخصوص هر سیستم عامل</li>
+</ul>
+<p><strong> این تقریبا خیلی زیاده!</strong>بنابراین بعد از اینکه شما تمام این آموزش‌ها رو پشت سر گذاشتید شما توانایی ساختن برنامه‌های پیچیده توسط JavaFX رو بدست میارید.</p>
+<h2 id="-">چطور از این آموزش استفاده کنید</h2>
+<p>دوراه برای استفاده از این آموزش وجود داره:</p>
+<ul>
+<li><strong>روشی که در اون خیلی یاد میگیرید:</strong> پروژه JavaFX خودتونو از صفر بسازید.</li>
+<li><strong>روش سریع:</strong> سورس کد آموزش مربوطه رو دانلود کنید و اونو توی IDE مورد نظر خودتون باز کنید, بعد آموزش‌ رو بخونید تا کد رو متوجه بشید.</li>
+</ul>
+<p>امیدوارم بهتون کلی خوش بگذره!از <a href="/library/javafx-8-tutorial/fa/part1/">قسمت اول: Scene Builder</a> شروع کنید.</p>
+<div dir="ltr" class="alert alert-success">
+  <strong><i class="fa fa-trophy"></i> Attribution:</strong> The Persian translation has been contributed by 
+  <ul>
+    <li><a href="https://github.com/yasharne" class="alert-link">Yashar Nesabian</a></li> 
+  </ul>
+  Thank you very much!
+</div>
+
+          </div>
+          
+          <hr>
+          
+  <nav>
+    <div class="article-paging">
+      <ul class="pagination">
+              <li class="active">
+      <a href="/library/javafx-8-tutorial/fa/" data-toggle="tooltip" title="مقدمه">Intro</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part1/" data-toggle="tooltip" title="قسمت اول: Scene Builder">1</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part2/" data-toggle="tooltip" title="قسمت دوم: مدل و TableView">2</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part3/" data-toggle="tooltip" title="قسمت سوم: تعامل با کاربر">3</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part4/" data-toggle="tooltip" title="قسمت چهارم: سلیقه سازی با CSS">4</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part5/" data-toggle="tooltip" title="قسمت پنجم: ذخیره کردن داده به عنوان XML">5</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part6/" data-toggle="tooltip" title="قسمت ششم: رسم نمودار آماری">6</a>
+      </li>
+        <li>
+      <a href="/library/javafx-8-tutorial/fa/part7/" data-toggle="tooltip" title="قسمت هفتم: ساختن نسخه قابل نصب">7</a>
+      </li>
+  
+      </ul>
+    </div>
+  </nav>
+
+        </div>
+      </article>
+      
+      
+      <section class="row">
+        <div class="col-md-offset-3 col-md-9">
+          <h2>Comments</h2>
+          <div id="disqus_thread"></div>
+        </div>
+      </section>
+      
+    </div>
+        
+    <footer class="site-footer container-fluid">
+  <div class="row">
+    <div class="col-sm-offset-2 col-sm-8">
+      <p>
+        <a class="btn btn-sm btn-social-icon btn-twitter" href="https://twitter.com/codemakery" data-toggle="tooltip" data-placement="top" title="Follow me on Twitter">
+          <i class="fa fa-twitter"></i>
+        </a>
+        <a class="btn btn-sm btn-social-icon btn-googleplus" href="https://plus.google.com/+MarcoJakob7" data-toggle="tooltip" data-placement="top" title="Follow me on Google+">
+          <i class="fa fa-google-plus"></i>
+        </a>
+        <a class="btn btn-sm btn-social-icon btn-rss" href="/rss" data-toggle="tooltip" data-placement="top" title="Subscribe to RSS Feed">
+          <i class="fa fa-rss"></i>
+        </a>
+        <a class="btn btn-sm btn-social-icon btn-mail" href="https://tinyletter.com/codemakery" data-toggle="tooltip" data-placement="top" title="Receive Email Updates">
+          <i class="fa fa-envelope" style="margin-top: -1px;"></i>
+        </a>
+      </p>
+      <p>
+        Subscribe to receive updates by <a href="https://tinyletter.com/codemakery">Email</a>.
+      </p>
+      
+      <form class="form-inline" action="https://tinyletter.com/codemakery" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/codemakery', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
+        <div class="form-group">
+          <input type="text" class="form-control" name="email" id="tlemail" placeholder="Enter email" />
+          <input type="hidden" value="1" name="embed"/>
+          <input type="submit" class="form-control btn-primary" value="Get updates" />
+        </div>
+      </form>
+      
+      <p>
+        <small>
+          Created by <a href="/about">Marco Jakob</a> • Licensed under <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a>
+        </small>
+      </p>
+    </div>
+  </div>
+</footer>
+
+    
+    
+    
+  <script type="text/javascript" src="/theme/js/prettify.min.js"></script>
+
+                                    
+  <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'codemakery'; // Required - the forum shortname
+    var disqus_identifier = '/library/javafx-8-tutorial/fa/';
+    var disqus_url = 'http://code.makery.ch/library/javafx-8-tutorial/fa/';
+    var disqus_title = 'آموزش JavaFX 8 (فارسی)';
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+
+    
+
+    
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+      <script type="text/javascript" src="/theme/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/theme/js/bootstrap-init-tooltips.min.js"></script>
+    
+  </body>
+</html>
