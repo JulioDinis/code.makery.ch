@@ -53,8 +53,7 @@ languages:
 
 Antigamente, era pouco realista programar aplicações móveis ou baseadas na Web. A linguagem de programação Dart representa uma forma de torna facil a programação de tais aplicações.
 
-
-`Hello Dart` guides you through the basics of programming. No prior programming knowledge is required. The playful world of `Hello Dart` visualizes the execution of your programs. Soon you will want to break out of the limiting rules of the `Hello Dart` world, which is intended. After the introduction with `Hello Dart` you will have a good foundation to start realizing your own web projects.
+`Hello Dart` vai guia-lo através dos conceitos basicos de programação. Não sendo nescessario ter conhecimentos de programação. O mundo divertido de `Hello Dart` mostra a execução de seus programas. Logo você vai querer sair das regras do mundo de `Hello Dart`. Depois da introdução com `Hello Dart` você vai terá uma boa base para começar a realizar seus próprios projetos web.
 
 <!--
 <div class="alert alert-info">
@@ -64,14 +63,14 @@ Antigamente, era pouco realista programar aplicações móveis ou baseadas na We
 
 ## The World
 
-The world of `Hello Dart` consists of fields, trees and stars.
+O mundo de `Hello Dart` consiste de campos, arvores, e estrelas.
 
 ![Elements](/assets/library/hello-dart/intro/elements.png)
 
 
-## The Player
+## O Jogador
 
-In the world of `Hello Dart` we move around with our character. You can choose from one of four characters.
+No mundo de `Hello Dart` podemos nos movimentar com com nosso . Você pode escolher um entre quatro personagens.
 
 ![Characters](/assets/library/hello-dart/intro/characters.png)
 
