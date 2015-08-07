@@ -8,7 +8,7 @@ github: https://github.com/marcojakob/code.makery.ch/edit/master/collections/lib
 published: true
 comments: false
 sidebars:
-- header: Languages
+- header: Linguagens
   body:
   - text: English
     link: /library/convert-web-page-to-word/
