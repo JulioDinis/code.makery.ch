@@ -74,74 +74,74 @@ No mundo de `Hello Dart` podemos nos movimentar com com nosso . Você pode escol
 
 ![Characters](/assets/library/hello-dart/intro/characters.png)
 
-A game character, called `Player` has the following actions and sensors that he/she can use:
+Um personagem do jogo, chamado `Player` tem as seguintes ações e sensores que ele/ela pode usar:
 
 
-### Actions
+### Ações
 
 <table class="table">
   <thead>
     <tr>
-      <th>Action</th>
-      <th>Command</th>
-      <th>Description</th>
+      <th>Ação</th>
+      <th>Comando</th>
+      <th>Descrição</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="vertical-align:middle">![Move](/assets/library/hello-dart/intro/move.png)</td>
       <td style="vertical-align:middle">`move()`</td>
-      <td style="vertical-align:middle">The player makes a step forward.</td>
+      <td style="vertical-align:middle">O jogador anda um passo para frente.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Turn Left](/assets/library/hello-dart/intro/turn-left.png)</td>
       <td style="vertical-align:middle">`turnLeft()`</td>
-      <td style="vertical-align:middle">The player turns left by 90 degrees.</td>
+      <td style="vertical-align:middle">O jogador vira 90 graus para a esquerda.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Turn Right](/assets/library/hello-dart/intro/turn-right.png)</td>
       <td style="vertical-align:middle">`turnRight()`</td>
-      <td style="vertical-align:middle">The player turns right by 90 degrees.</td>
+      <td style="vertical-align:middle">O jogador vira 90 graus para a direita.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Put Star](/assets/library/hello-dart/intro/put-star.png)</td>
       <td style="vertical-align:middle">`putStar()`</td>
-      <td style="vertical-align:middle">The player puts down a star.</td>
+      <td style="vertical-align:middle">O jogador coloca uma estrela.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Move](/assets/library/hello-dart/intro/remove-star.png)</td>
       <td style="vertical-align:middle">`removeStar()`</td>
-      <td style="vertical-align:middle">The player removes a star.</td>
+      <td style="vertical-align:middle">O jogador remove uma estrela.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Say](/assets/library/hello-dart/intro/say.png)</td>
       <td style="vertical-align:middle; ">`say('Hello')`</td>
-      <td style="vertical-align:middle">The player says something using a speech bubble.</td>
+      <td style="vertical-align:middle">O jogador diz algo usando um balão de fala.</td>
     </tr>
   </tbody>
 </table>
 
 
-### Sensors
+### Sensores
 
 <table class="table">
   <thead>
     <tr>
       <th>Sensor</th>
-      <th>Command</th>
-      <th>Description</th>
+      <th>Comando</th>
+      <th>Descrição</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="vertical-align:middle">![Can Move](/assets/library/hello-dart/intro/can-move.png)</td>
       <td style="vertical-align:middle">`canMove()`</td>
-      <td style="vertical-align:middle">The player checks if he can move to the next field.</td>
+      <td style="vertical-align:middle">O jogador verifica se pode mover se para o proximo campo.</td>
     </tr>
     <tr>
       <td style="vertical-align:middle">![Tree Front](/assets/library/hello-dart/intro/tree-front.png)</td>
       <td style="vertical-align:middle">`treeFront()`</td>
-      <td style="vertical-align:middle">The player checks if there is a tree in front.</td>
+      <td style="vertical-align:middle">O jogador verifica se tem uma árvore na frente.</td> `PAREI AQUEEEEE  oooooooossasdasdhasjkdhasjkdhasjkdhasjkdhajsdhaskjhdajkshdajkshdkjashdjashdkahsdHJFJHAJKFHAKSF`
     </tr>
     <tr>
       <td style="vertical-align:middle">![Tree Left](/assets/library/hello-dart/intro/tree-left.png)</td>
